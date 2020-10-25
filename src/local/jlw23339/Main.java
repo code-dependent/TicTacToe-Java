@@ -2,7 +2,7 @@ package local.jlw23339;
 
 import java.util.Scanner;
 
-public class main
+public class Main
 {
 
     public static void main(String[] args)
@@ -14,6 +14,10 @@ public class main
                 {'-','-', '+', '-','-', '+', '-','-'},
                 {' ',' ', '|', ' ',' ', '|',' ', ' '}};
 
+        Player p1 = new Player();
+        Player p2 = new Player();
+        System.out.println(p1.getPlayer());
+        System.out.println(p2.getPlayer());
         printboard(board);
         Scanner s = new Scanner(System.in);
         System.out.println("Choose a position: ");
